@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { LoginInfo } from "@/types";
-import { ElForm } from "element-plus";
+import { ElForm, ElFormItem, ElInput, ElRow, ElButton } from "element-plus";
 import useUserStore from "@/stores/modules/user.store";
 import { reactive, ref } from "vue";
 import { loginRules } from "./config";
@@ -31,10 +31,10 @@ const userLogin = () => {
         :model="loginInfo"
         ref="userLoginFormRef"
       >
-        <el-form-item label-width="30rem" label="用户名" prop="username">
+        <el-form-item label-width="70px" label="用户名" prop="username">
           <el-input v-model="loginInfo.username" />
         </el-form-item>
-        <el-form-item label-width="30rem" label="密码" prop="password">
+        <el-form-item label-width="70px" label="密码" prop="password">
           <el-input
             v-model="loginInfo.password"
             type="password"
