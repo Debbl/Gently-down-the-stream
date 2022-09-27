@@ -3,5 +3,7 @@ export interface UserLoginResponse {
   data: {
     username: string;
     password: string;
-  };
+  } | null;
+  msg: string;
+  map: object;
 }

@@ -9,8 +9,8 @@ const userStore = useUserStore();
 const userLoginFormRef = ref<InstanceType<typeof ElForm>>();
 
 const loginInfo = reactive<LoginInfo>({
-  username: "",
-  password: "",
+  username: "zhangsan4",
+  password: "123456",
 });
 
 const userLogin = () => {

@@ -6,4 +6,6 @@ const instance = axios.create({
   timeout: TIMEOUT,
 });
 
+instance.interceptors.response.use((value) => value.data);
+
 export default instance;
