@@ -1,7 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="border text-red-500">
-    <div>app</div>
+  <div class="h-full">
     <RouterView />
   </div>
 </template>
